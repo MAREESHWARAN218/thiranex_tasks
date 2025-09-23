@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Porthole Example</title>
+  <style>
+    body {
+      background-color: #0a3d62;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .porthole {
+      width: 300px;
+      height: 300px;
+      border: 15px solid #ccc;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      position: relative;
+      background-color: #333;
+    }
+
+    .porthole img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .porthole:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="porthole">
+    <img src="https://picsum.photos/500/500" alt="View through porthole">
+  </div>
+
+</body>
+</html>
